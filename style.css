@@ -1,39 +1,67 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #D7D7D9;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    display: flex;
-    position: absolute;
-    height: 600px;
-    width: 1000px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.container .img-box{
+section {
     position: relative;
-    width: 400px;
-    height: 600px;
+    min-height: 100vh;
+    background-color: powderblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container .img-box img {
+section .container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+section .container .img-box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .container .img-box img{
     position: absolute;
-    top: 0px;
-    left: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
 }
 
-.container .content-box {
-    display: flex;
+section .container .content-box {
     position: relative;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    width: 60%;
+    width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .container .content-box h1 {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+}
+
+section .container .content-box .input-box {
+    width: 200px;
+    margin-top: 10px;
+}
+
+section .container .content-box .input-box input {
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
 }
