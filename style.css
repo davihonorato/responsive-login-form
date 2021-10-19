@@ -92,3 +92,17 @@ section .container .content-box .sign-up a:hover {
     text-decoration: underline;
     color: #000D08;
 }
+
+@media only screen and (max-width: 850px) {
+    section .container {
+        max-width: 400px;
+    }
+
+    section .container .img-box {
+        display: none;
+    }
+
+    section .container .content-box {
+        width: 100%;
+    }
+}
